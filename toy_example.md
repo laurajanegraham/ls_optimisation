@@ -131,15 +131,15 @@ However, we would focus on the landscape-scale mean values:
 
 ```r
 tibble(Service = c("Crop production", "Pollinator abundance", "Recreation potential"),
-              Value = c(crop_prod_mean, poll_abund_mean, rec_pot_mean)) %>% kable
+              Value = c(crop_prod_mean, poll_abund_mean, rec_pot_mean)) %>% kable(format = "markdown")
 ```
 
 
 
-Service                     Value
----------------------  ----------
-Crop production         0.0547852
-Pollinator abundance    0.3940000
-Recreation potential    0.8494922
+|Service              |     Value|
+|:--------------------|---------:|
+|Crop production      | 0.0501432|
+|Pollinator abundance | 0.4080444|
+|Recreation potential | 0.7807962|
 
 NB For the simulation version of this, I created 100 replicates of landscapes with varying levels of % natural cover and spatial autocorrelation. The final mean values attained for each service were normalised between 0 and 1 so that each were on the same scale. 

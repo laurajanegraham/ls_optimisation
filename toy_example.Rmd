@@ -116,7 +116,7 @@ However, we would focus on the landscape-scale mean values:
 
 ```{r}
 tibble(Service = c("Crop production", "Pollinator abundance", "Recreation potential"),
-              Value = c(crop_prod_mean, poll_abund_mean, rec_pot_mean)) %>% kable
+              Value = c(crop_prod_mean, poll_abund_mean, rec_pot_mean)) %>% kable(format = "markdown")
 
 
 ```
